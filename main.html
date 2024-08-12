@@ -4,31 +4,82 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		/* Apply the background color to the entire page */
+:root {
+    background-color: rgb(135, 206, 235);
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the paragraphs within the article */
+article p:first-child {
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+article p:nth-child(2) {
+    color: black;
+}
+
+article p:last-child {
+    color: red;
+}
+
+/* Styling for the unordered list and its items */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: gray;
+    color: black;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Style odd items with a white background */
+ul li:nth-child(odd) {
+    background-color: white;
+}
+
+/* Specific styles for the first and last items */
+ul li:first-child,
+ul li:last-child {
+    font-size: 22px;
+}
+
+/* Style for the third-to-last item */
+ul li:nth-last-child(3) {
+    background-color: pink;
+}
+
+	</style>
 </head>
 
-<body style="background-color: lightblue;">
+<body>
 	<!-- the entire body must be written by student -->
 
 
-	<!-- header -->
-	<header class = "heading">
-	<p>First paragraph...</p>
-	</header>
-
-	<!-- article with para -->
 	<article>
-	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum Sociis natoque penatibus et magnis dis parturient monte<br><br>Nullam dictum felis eu pede mollis pretium. Integer tincidunt Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu</p>
-	<p style = color:red;>Nam eget dui Etiam rhoncus Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum Nam quam nunc, blandit vel nunc,</p>
-	</article>
-
-	<!-- list -->
-	<ul class = "list">
-		<li class = "one">First Item</li>
-		<li class = "two">Second Item</li>
-		<li class = "three">Third Item</li>
-		<li class = "four">Fourth Item</li>
-		<li class = "five">Fifth Item</li>
-	</ul>
+        <p>This is the first paragraph with white text on a black background.</p>
+        <p>This is the second paragraph with the standard text color.</p>
+        <p>This is the third paragraph with red text.</p>
+    </article>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
     <script type="text/javascript" src="./script.js">
 </script>
 

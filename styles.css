@@ -1,4 +1,9 @@
 /*  your css code here. If applicable */
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
 .heading {
 	background-color: black;
 	color: white;
